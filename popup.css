@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #bd9e6b;
+  color: #084529;
+  margin:0;
+  padding:0;
+}
+.special-link {
+  color: #084529;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.special-link::after { 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.special-link:hover::after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.parrafo{
+  text-align: center;
+}
+.parrafo img{
+display: inline-block;
+}
+li.cabecera {
+  display: inline;
+  float: left;
+}
+ul.cabecera {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #084529;
+}
+li.cabecera a {
+  display: block;
+  color: #ffffff; 
+  text-align: center;
+  padding: 19px 11px;
+  text-decoration: none;
+  font-weight: bold;
+}
+li.cabecera a:hover {
+  background-color: #000000;
+  color: #ffffff; 
+}
+.default-text{
+
+  margin-top: 10px;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  font-size: 16px;
+}
+.texto {
+  display: none;
+}
+.default-text {
+  display: block;
+}
+.default-text a{
+  color: #FFFAFA;   
+}
+.default-text:target {
+  display: none;
+}
+.texto:target {
+  display: block;
+}
+.container {
+  width: 395px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+#price {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.links-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+}
+.links-table td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #bd9e6b;
+}
+.brillo {
+  --a: 8deg; 
+  aspect-ratio: 1;
+  transform: perspective(400px) rotate3d(var(--i,1,-1),0,var(--a));
+  mask: 
+    linear-gradient(135deg,#000c 40%,#000,#000c 60%)
+    100% 100%/240% 240%;
+  transition: .4s;
+}
+.brillo:hover {
+  --i:-1,1;
+  mask-position: 0 0;
+}
+
